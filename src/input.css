@@ -1,0 +1,20 @@
+/* src/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* คุณสามารถเพิ่ม Custom CSS ของคุณเองที่นี่ได้ */
+/* ตัวอย่างที่เราเคยใช้ใน <style> มาก่อน */
+body {
+    /* ถ้ากำหนดใน tailwind.config.js แล้ว ตรงนี้อาจจะไม่ต้องใส่ซ้ำ */
+    /* font-family: 'Sarabun', sans-serif; */
+    @apply bg-gray-100; /* ตัวอย่างการใช้ @apply ถ้าต้องการ */
+}
+
+/* ตัวอย่าง custom class อื่นๆ */
+.my-custom-button {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+.my-custom-button:hover {
+    @apply bg-blue-700;
+}
